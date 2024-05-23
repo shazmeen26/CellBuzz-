@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Menu</title>
+        <link rel="stylesheet" href="newme.css"> 
+    </head>
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>         
+        <body>
+        <div class="menu">
+            <ul class="list">
+                <li><div><a href="#">Home</a></div></li>
+                <li><div><a href="#">About Us</a></div></li>
+                <li><div class="dropdown"><a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="#">Samsung</a>
+                    <a href="#">One OnePlus</a>
+                    <a href="#">Xiomi</a>
+                    <a href="#">Vivo</a>
+                </div>
+                </div></li>
+                <li><div class="dropdown"><a class="dropbtn"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones" title="Type the name" style="height: 18px;display: inline-flex;" ><img src="ser.png" style="height: 18px; width: 30px;"></a>
+                    <div class="dropdown-content">
+                        <ul id="myUL" class="sera">
+                            <li><a href="#">Example</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Vivo</a></li>
+                            <li><a href="#">Xiomi</a></li>
+                            <li><a href="#">Oneplus</a></li>
+                            <li><a href="#">Hawaiza</a></li>
+                            <li><a href="#">Huzefa</a></li>
+                            <li><a href="#">Shazmeen</a></li>
+                            <li><a href="#">Shams</a></li>
+                            <li><a href="#">Fardeen</a></li>
+                            <li><a href="#">Taizen</a></li>
+                          </ul>
+                    </div>
+                </div></li>
+                <li><div><a href="#"><div  style="display: inline-flex;">Wishlist<img src="bag.jpg" style="height: 18px; width: 30px; padding-left: 5px;"></div></a></div></li>
+                <li><div><a href="#"><div style="display: inline-flex;"><button style="font-size: 14px;">Login</button><img src="login.jpg" style="height: 18px; width: 30px; padding-left: 5px;"></div></a></div></li>
+            </ul>
+        </div>
+    </body>
+</html>

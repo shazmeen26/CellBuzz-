@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.menu{
+    float: left;
+    height: 70px;
+}
+.list{
+    display: inline-flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+
+}
+.list li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 1px;
+    background-color: aquamarine;
+    transition: 0.4s ease-in-out;
+}
+.list li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    padding: 5px 53.50px;
+}
+.list li a:hover{
+    color: aqua;
+}
+.list li:hover{
+    background-color: orange;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(105, 209, 45);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: rgb(214, 124, 39); color: aqua;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background: none}
+.sera{
+    display: block;
+}
+  #myInput {
+ 
+    background-repeat: no-repeat;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+   
+  #myUL li a:hover:not(.header) {
+    background-color:rgb(221, 135, 23);
+  }
+.sera li {
+  display: block;
+  padding: 0%;
+}

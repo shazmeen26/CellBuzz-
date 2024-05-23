@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>
+            19427
+        </title>
+               
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div id="category">
+            <ul class="menu">
+                <li><div class="dropdown">
+                    <a class="dropbtn">Featured</a>
+                    <div class="dropdown-content">
+                    <a class="btn" data-filter="one+" style="text-align: center;"><button onclick="onClick" style="padding: 6px 17px">All Product</button></a>
+                    <a class="btn" data-filter="one+" style="text-align: center;"><button onclick="onClick" style="padding: 6px 17px">Trending</button></a>
+                    <a class="btn" data-filter="one+" style="text-align: center;"><button onclick="onClick" style="padding: 6px 17px">Highly Rated</button></a>
+                    </div>
+                    </div>
+                
+                <li><div class="dropdown">
+                    <a class="dropbtn">Price</a>
+                    <div class="dropdown-content">
+                    <a class="btnn" data-filter="one+" style="text-align: center;"><button onclick="onClick" style="padding: 6px 17px">Low-To-High</button></a>
+                    <a class="btnn" data-filter="one+" style="text-align: center;"><button onclick="onClick" style="padding: 6px 17px">High-To-Low</button></a>
+                    </div>
+                    </div>
+
+                <li><div class="dropdown">
+                <a class="dropbtn">Brand</a>
+                <div class="dropdown-content">
+                    <!--<ul class="type">
+                        <li class="btn" data-filter="all">all</li>
+                        <li class="btn" data-filter="phone">xiomi</li>
+                        <li class="btn" data-filter="laptop">samsung</li>
+                        <li class="btn" data-filter="headphone">vivo</li>
+                        <li class="btn" data-filter="shoes">1+</li>
+                    </ul>-->
+                <a class="btnm" data-filter="all" style="text-align: center;"><button onclick="onClick" style="padding: 6px 35px;">All</button></a>
+                <a class="btnm" data-filter="xiomi" style="text-align: center;"><button onclick="onClick" style="padding: 6px 26px";>Xiomi</button></a>
+                <a class="btnm" data-filter="samsung" style="text-align: center;"><button onclick="onClick" style="padding: 6px 15px">Samsung</button></a>
+                <a class="btnm" data-filter="vivo" style="text-align: center;"><button onclick="onClick" style="padding: 6px 30px">Vivo</button></a>
+                <a class="btnm" data-filter="one+" style="text-align: center;"><button onclick="onClick" style="padding: 6px 17px">OnePlus</button></a>
+                </div>
+                </div>
+                </li>
+            </ul>
+        </div>     
+    
+        <div class="image-container">
+
+            <div class="xiomi_phones">
+                <div class="image">
+                    <img src="watch.jpg" alt="lkjhgert">
+                </div>
+                <div class="info">
+                    <h3>smartphones</h3>
+                    <div class="subInfo">
+                        <strong class="price">₹1000</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="samsung_phones">
+                <div class="image">
+                    <img src="g_img1.jpg" alt="lkhhzht">
+                </div>
+                <div class="info">
+                    <h3>smartphones</h3>
+                    <div class="subInfo">
+                        <strong class="price">₹1000</strong>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="vivo_phones">
+                <div class="image">
+                    <img src="g_img2.jpg" alt="kkzkzgert">
+                </div>
+                <div class="info">
+                    <h3>smartphones</h3>
+                    <div class="subInfo">
+                        <strong class="price">₹1000</strong>
+                    </div>
+                </div>
+            </div>
+
+
+   <script>
+
+
+       
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  } 
+  
+  
+  /*<!--$('.dropdown .dropdown-content .btn').click(function(){
+  
+  let filter = $(this).attr('data-filter');
+  if(filter == 'all'){
+      $('.category .box').show(400);
+  }else{
+      $('.category .box').not('.'+filter).hide(200);
+      $('.category .box').filter('.'+filter).show(400);
+  }
+  
+  $(this).addClass('button-active').siblings().removeClass('button-active');
+  
+  });*/
+
+  function onClick(){
+    document.getElementsByClassName("dropdown-content").classList.toggle("show");
+}
+window.onclick = function(event){
+    if(!event.target)
+}
+  
+    </script> 
+</body>
+</html>     
+
+

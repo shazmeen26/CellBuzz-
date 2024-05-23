@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+
+    <form name="form1">
+	<div class="popup" id="test">
+	
+    <div class="form">
+        <h1><b style="color: white; font-family: 'Times New Roman', Times, serif; font-size: 30px;">LOG IN</b></h1>
+
+    <div class="form-element">
+        <label for="email" class="label1"><b>E-mail</b></label>
+        <input type="text" id="email" onblur="validateEmail()" placeholder="Enter Email ID" required>
+    </div>
+<!--
+    <div class="form-element">
+        <label class="label2"><b>Phone number</b></label>
+        <input type="number" id="phnum" name="c_no" onblur="validatePhoneNumber()" placeholder="Enter the phone number" required >
+    </div>
+-->
+    <div class="form-element">
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" onblur="validatePassword()" placeholder="Enter password" required>
+    </div>
+
+    <div class="form-element">
+        <input type="checkbox" id="z">
+        <label for="z" style="font-size: medium;">Remember Me</label>     
+    </div>
+
+
+    <div class="form-element" >
+        <button id="a" onclick="homepage()"><b>Log in </b></button></a>
+    </div>
+
+    <div class="form-element">
+        <a href="#" onclick="forgot()">Forgot password</a>
+    </div>
+    
+    </div>
+</div>
+</form>
+
+
+  <script>
+  
+  function homepage(){
+		alert("Login Successful");
+		window.open("file:///C:/Users/91913/Desktop/clg/5th%20SEM/CSS/CODES/microproject/microproject.html");
+		}
+  
+  
+      document.getElementById("email").setfocus();
+ /* document.querySelector("#view").onclick=function(){
+   var awesome=document.getElementById("test");
+ test.style.opacity="1";
+  }
+  */
+        
+  document.getElementById("check").onclick=function(){
+    var awesome=document.getElementById("test");
+ test.style.opacity="0";
+  }
+  var user=document.getElementById("email");
+  var pass=document.getElementById("password");
+  var but=document.getElementById("a");
+
+document.getElementById("a").onclick=function(){ 
+    if((user.value=="")||(pass.value=="")){
+            alert("PLZZ FILL ALL THE DETAILS");
+      }else{
+        var u=user.value
+        var p=pass.value
+        var n=localStorage.getItem(u);
+        if(n==p){
+            alert("Login succesful");
+        }else{
+            alert("Incorrect Username or Password");
+        }
+      }
+
+
+    } 
+     document.getElementById("z").onclick=function(){
+       if(document.getElementById("z").checked==true){
+           pass.type="text";
+       }else{
+           pass.type="password";
+       }
+    }
+
+    function validateEmail() {
+    var email = document.getElementById('email').value;
+    var regex = /^[a-zA-Z][0-9a-zA-Z._]{1,}[@][a-zA-Z]{1,}([.])[a-zA-Z]{1,}([.])?[a-zA-z]{1,}$/;
+    if(regex.test(email)!=true) 
+    { alert('Invalid Email ID');
+    } }
+
+    function validatePassword() {
+    var pass = document.getElementById('password').value;
+    var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@._!#$^&*]).{8,}$/;
+    if(regex.test(pass)!=true)  {
+    alert('Must contain atleast 1 upper-case, 1 lower-case, 1 digit, 1 special-char and atleast 8 length');
+    } }
+
+
+
+    function forgot()
+    {
+        alert('Message sent to your Phone Number');
+    }
+    
+    </script>
+  
+</body>
+</html>

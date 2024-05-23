@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+
+<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+    
+<div class="cat" id="test">
+
+    <div class="form">
+        <h2>Sign up</h2>
+    <div class="form-element">
+        <label for="email" class="label1"><b>E-mail</b></label>
+        <input type="text" id="email" onblur="validateEmail()" placeholder="Enter Email ID" required>
+    </div>
+
+    <div class="form-element">
+        <label class="label2"><b>Phone number</b></label>
+        <input type="number" id="phnum" name="c_no" onblur="validatePhoneNumber()" placeholder="Enter the phone number" required >
+    </div>
+
+    <div class="form-element">
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" onblur="validatePassword()" placeholder="Enter password" required>
+    </div>
+    <div class="form-element">
+        <input type="checkbox" id="o">
+        <label for="o">Remember Me</label>
+    </div>
+    <div class="form-element">
+        <button id="but" onclick="homepage()">Sign Up</button>
+    </div>
+	
+    </div>
+</div>
+
+  <script>
+		function homepage(){
+		alert("SignUp Successful");
+		window.open("file:///C:/Users/91913/Desktop/clg/5th%20SEM/CSS/CODES/microproject/microproject.html");
+		}
+ 
+    
+  document.getElementById("but").onclick=function(){
+	var f=document.getElementById("email");
+	var e=document.getElementById("password");
+	if((f.value=="")||(e.value=="")){
+      alert("PLEASE FILL ALL THE FIELDS");
+	}else{
+      localStorage.setItem(f.value,e.value);
+      alert("Registration Successful");
+		}
+	}
+	document.getElementById("o").onclick=function(){
+       if(document.getElementById("o").checked==true){
+           pass.type="text";
+       }else{
+           pass.type="password";
+       }
+    }
+
+    function validateEmail() {
+    var email = document.getElementById('email').value;
+    var regex = /^[a-zA-Z][0-9a-zA-Z._]{1,}[@][a-zA-Z]{1,}([.])[a-zA-Z]{1,}([.])?[a-zA-z]{1,}$/;
+    if(regex.test(email)!=true) 
+    { alert('Invalid Email ID');
+    } }
+
+    function validatePassword() {
+    var pass = document.getElementById('password').value;
+    var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@._!#$^&*]).{8,}$/;
+    if(regex.test(pass)!=true)  {
+    alert('Must contain atleast 1 upper-case, 1 lower-case, 1 digit, 1 special-char and atleast 8 length');
+    } }
+
+    function validatePhoneNumber() {
+    var pass = document.getElementById('phnum').value;
+    var regex = /^\d{10}$/;
+    if(regex.test(pass)!=true)  {
+    alert('Invalid Contact Number');
+    } }
+
+ </script>
+  
+</body>
+</html>

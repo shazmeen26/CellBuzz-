@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <title>Shopping Cart</title>
+	<script>
+
+	let carts=document.querySelectorAll('.addcart');
+let products=[
+    {
+        name:'Basic solid coloured masks(6)',
+        tag:'m1',
+        price:450,
+        incart:0
+    },
+    {
+        name:'Colorful Assorted Patterned Masks (Pack of 6)',
+        tag:'m2',
+        price:450,
+        incart:0
+    },
+    {
+        name:'Kids Mask',
+        tag:'m3',
+        price:70,
+        incart:0
+    },
+    {
+        name:'Disposable surgical Mask',
+        tag:'m4',
+        price:100,
+        incart:0
+    },
+    {
+        name:'Citrus Hand sanitiser',
+        tag:'san1',
+        price:250,
+        incart:0
+    },
+    {
+        name:'homemade organic hand sanitiser',
+        tag:'san2',
+        price:280,
+        incart:0
+    },
+    {
+        name:'all in one disinfectant spray',
+        tag:'s3',
+        price:450,
+        incart:0
+    },{
+        name:'Dettol all in one disinfectant spray',
+        tag:'spray4',
+        price:450,
+        incart:0
+    },
+    {
+        name:'gloves',
+        tag:'g',
+        price:20,
+        incart:0
+    }
+];
+for (let i=0; i < carts.length;i++){
+  carts[i].addEventListener('click', ()  => {
+      cartnos(products[i]);
+      totalcost(products[i]);
+  })
+}
+
+function onloadcartnos(){
+    let productnos=localStorage.getItem('cartnos');
+    if(productnos){
+        document.querySelector('.cart span').textContent=productnos;
+    }
+}
+
+
+function success(){
+    alert("your order completed successfully!Your payment link has been sent to your email account");
+}
+
+
+
+function cartnos(product){
+    let productnos=localStorage.getItem('cartnos');
+    productnos=parseInt(productnos);
+    if(productnos){
+        localStorage.setItem('cartnos',productnos + 1);
+        document.querySelector('.cart span').textContent=productnos + 1;  
+    }else{
+        localStorage.setItem('cartnos', 1);
+        document.querySelector('.cart span').textContent=1;
+    }
+    setItems(product);
+}
+     function setItems(product){
+         let cartitems=localStorage.getItem('productsincart');
+         cartitems=JSON.parse(cartitems);
+        
+          if(cartitems !=null){
+              if(cartitems[products.tag]==undefined){
+                  cartitems={
+                      ...cartitems,
+                      [product.tag]: product
+                  }
+              }
+             cartitems[product.tag].incart += 1;
+          }else{
+            product.incart = 1;
+            cartitems={
+                [product.tag]: product
+          }
+         }   
+         localStorage.setItem("productsincart",JSON.stringify
+         (cartitems));
+     }
+     function totalcost(product){
+         //console.log("the products price is",product.price);
+         let cartcost=localStorage.getItem('total cost');
+         
+         console.log("my cart cost is",cartcost);
+         console.log(typeof cartcost);
+
+         if(cartcost !=null){
+            cartcost=parseInt(cartcost);            
+              localStorage.setItem("total cost",cartcost+product.price);
+         }else{
+            localStorage.setItem("total cost",product.price);
+         }
+     }
+
+     function displaycart(){
+              let cartitems=localStorage.getItem("productsincart");
+              cartitems=JSON.parse(cartitems);
+              let productcontainer=document.querySelector(".products");
+              let cartcost=localStorage.getItem('total cost');
+              console.log(cartitems);
+              if(cartitems && productcontainer){
+                 productcontainer.innerHTML='';
+                 Object.values(cartitems).map(item => {
+                       productcontainer.innerHTML +=`
+                       <div class="product">
+                           
+                           <img src="./images/${item.tag}.jpg">
+                            <span>${item.name}</span>
+                       </div>
+                       <div class="price">
+                              $${item.price},00
+                       </div>
+                       <div class="quantity">
+                       
+                       <span>${item.incart}</span>
+                       
+                       </div>
+                       <div class="total">
+                       $${item.incart*item.price},00
+                       </div>                 
+                 });
+                 productcontainer.innerHTML+=`
+                 <div class="baskettotalcontainer">
+                 <h4 class="baskettotaltitle">
+                 Basket Total
+                 </h4>
+                 <h4 class="baskettotal">
+                 $${cartcost},00
+                 </h4>
+                 `;
+              }
+     }
+onloadcartnos();
+displaycart();
+</script>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>SHOP</h2>
+            <ul>
+                <li><a href="shopp.html">Home></a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="cart"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="productscontainer">
+        <div class="productheader">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+        </div>
+        <button class="exit" type="button" onclick="success()"> BUY</button>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

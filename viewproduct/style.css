@@ -1,0 +1,166 @@
+*
+{
+  box-sizing: border-box;
+}
+           
+.price
+{
+  text-shadow: 1px 1px 2px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkblue;
+  
+}
+.container1
+{
+  margin-left: 300px;
+  margin-top: 1px;
+  align-items: center;
+  font-size: 22px;
+  display: flex;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 6s infinite;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  color: darkblue;
+  
+  
+ 
+}
+
+@keyframes text
+{
+  0%{
+    width: 0ch;
+
+  }
+  50%{
+    width: 50ch;
+
+  }
+}
+
+.information
+{
+    margin-top: 50px;
+    height: auto;
+
+line-height: 1.9em;
+    margin-right: 100px;
+    float: right;
+    
+     
+}
+.cart
+{
+  background: darkblue;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  height: 50px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.cart:hover
+{
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.199);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
+
+
+p
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.compare
+{
+  background: darkblue;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  height: 50px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 25px;
+
+}
+
+.compare:hover
+{
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.199);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
+
+
+
+
+.card
+{
+	position: absolute;
+	margin-left:150px;
+  margin-top:80px;
+	width: 200px;
+	height: 400px;
+	display : flex;
+	flex-direction:column;
+}
+
+.card span
+{
+	position: absolute;
+	top: 0;
+	left: calc(100% / 6 * var(--i));
+	width: calc(100% / 6);
+	height: 100%;
+}
+
+.card img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: -1;
+	pointer-events: none;
+}
+
+.card span:hover + img
+{
+	opacity: 1;
+}
+
+.icon
+{
+  transition-duration: 0.5s;
+}
+
+.icon:hover{
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

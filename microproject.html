@@ -1,0 +1,208 @@
+<html>	
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CellBuzz</title>
+        <link rel="stylesheet" href="newme.css"> 
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+		
+		
+		<!--login-->
+		
+		
+		
+        </script>    
+</head>		
+
+<body>
+<div>
+<div class="header" >
+		<img src="logo.png" height="150px">
+	</div>
+</div>
+<div class="header2" >
+<h1 id="colourit" onmouseover="mouseover()" onmouseout="mouseout()">Find the best mobile for you!</h1>
+</div>
+		
+        <div class="menu">
+            <ul class="list">
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\microproject.html">Home</a></div></li>
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\aboutus.html">About Us</a></div></li>
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\products\mobdiv.html" target="_blank">Products</a>
+                </div></li>
+				<li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\comparision.html">Compare</a></div></li>
+                <li><div class="dropdown"><a class="dropbtn"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones" title="Type the name" style="height: 18px;display: inline-flex;" ><img src="ser.png" style="height: 18px; width: 30px;"></a>
+                    <div class="dropdown-content">
+                        <ul id="myUL" class="sera">
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html">Samsung Galaxy S20 FE</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung2.html">Samsung Galaxy M12</a></li>                            
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung3.html">Samsung Galaxy M52</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung4.html">Samsung Galaxy A03s</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung5.html">Samsung Galaxy A22</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo1.html">Vivo V21 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo2.html">Vivo Y21</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo3.html">Vivo Y33s</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo4.html">Vivo V21e 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo5.html">Vivo Y73</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+7T.html">OnePlus 7T</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+8T.html">OnePlus 8T 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+9.html">OnePlus 9 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_2.html">OnePlus Nord 2</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_CE.html">OnePlus Nord CE</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi8.html">Xiomi Redmi 8</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi9p.html">Xiomi Redmi 9 Power</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi10s.html">Xiomi Redmi Note 10S</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9.html">Xiomi Redmi Note 9</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9p.html">Xiomi Redmi Note 9 Pro</a></li>
+                         
+                          </ul>
+                    </div>
+                </div></li>
+                <li><div>
+				<a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\login.html">
+				<div style="display: inline-flex;" id="view">Login<img src="login.jpg" style="height: 18px; width: 30px; padding-left: 5px;">
+				</div></a></div></li>
+            </ul>
+        </div>
+	
+
+<!-- LOGIN -->
+
+	
+<!-- Banner -->
+
+<link rel="stylesheet" href="style1.css">
+	<div class="container">
+    
+      <div class="text">
+        <h1>CELLBUZZ</h1>
+        <p>World's Largest Online Store For Smartphones</p>
+        <button class="log" id="view" onclick="loginform()">
+            LOG IN
+        </button>   
+    </div>
+    <div>
+        <p class="sign">
+            Don't have an account? <a href="file:///C:/Users/91913/Desktop/clg/5th%20SEM/CSS/CODES/microproject/signup.html" class="sbtn">SIGN UP</a>
+        </p>
+    </div>
+    
+    </div>	
+	
+	
+	
+	
+	<!-- Slideshow container -->
+	<br>
+	<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+		<div class="numbertext">1 / 4</div>
+		<img src="samsungslideshowimage.jpg" style="width:100%">
+		<div class="text1">Samsung Galaxy S10</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 4</div>
+		<img src="oneplusslideshowimage.jpg" style="width:100%">
+		<div class="text1">One Plus Note 5</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 4</div>
+		<img src="vivoslideshowimage.jpg" style="width:100%">
+		<div class="text1">Vivo S30</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">4 / 4</div>
+		<img src="xiaomislideshowimage.jpg" style="width:100%">
+		<div class="text1">Xiaomi Note 6 Pro</div>
+	</div>
+
+
+	<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+
+
+	
+
+	<script>
+		
+	
+	function mouseover(){
+	document.getElementById("colourit").style.color="black";
+	}
+	
+	function mouseout(){
+	document.getElementById("colourit").style.color="#800080";
+	}
+		
+		function loginform(){
+		window.open("file:///C:/Users/91913/Desktop/clg/5th%20SEM/CSS/CODES/microproject/login.html");
+		}
+
+
+	
+		var slideIndex = 1; 
+		showSlides(slideIndex);
+		// Next and previous
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+
+	// Slideshow image
+	function currentSlide(n) {
+	showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		}
+		</script>  
+		
+	  <link rel="stylesheet" type="text/css" href="slideshow.css"/>
+	
+	
+    </body>
+</html>  

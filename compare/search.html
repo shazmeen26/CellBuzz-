@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Search
+        </title>
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+             <link rel="stylesheet" type="text/css" href="search.css"/>
+    </head>
+    <body>
+        <div class="dropdown" >
+            <a class="dropbtn" ><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones" title="Type the name" style="height: 30px;display: inline-block;" ><i class='bx bx-search' style="font-size: 20px;"></i></a>
+            <div class="dropdown-content">
+                <ul id="myUL" class="sera">
+                    <li><a href="Menu.html">Samnsung</a></li>
+                    <li><a href="button.html">Vivo</a></li>
+                    <li><a href="ser.png">Xiomi</a></li>
+                    <li><a href="shop.jfif">Oneplus</a></li>
+                    <li><a href="">Hawaiza</a></li>
+                    <li><a href="#">Huzefa</a></li>
+                    <li><a href="#">Shazmeen</a></li>
+                    <li><a href="#">Shams</a></li>
+                    <li><a href="#">Fardeen</a></li>
+                    <li><a href="#">Taizen</a></li>
+                  </ul>
+            </div>
+            </div>
+    </body>
+</html>

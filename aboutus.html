@@ -1,0 +1,163 @@
+<html>
+   <head>
+        <title>About us</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="newme.css"> 
+		
+		<script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>   
+    </head>
+        
+    <body>
+        <link rel="stylesheet" href="cards.css"> 
+		
+	<!--Menu-->	
+<div>
+<div class="header" >
+		<img src="logo.png" height="150px">
+	</div>
+</div>
+<div class="header2" >
+<h1>Find the best mobile for you!</h1>
+</div>
+		
+        <div class="menu">
+            <ul class="list">
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\microproject.html">Home</a></div></li>
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\aboutus.html">About Us</a></div></li>
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\products\mobdiv.html" target="_blank">Products</a>
+                </div></li>
+				<li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\comparision.html">Compare</a></div></li>
+                <li><div class="dropdown"><a class="dropbtn"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones" title="Type the name" style="height: 18px;display: inline-flex;" ><img src="ser.png" style="height: 18px; width: 30px;"></a>
+                    <div class="dropdown-content">
+                        <ul id="myUL" class="sera">
+                        <li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html">Samsung Galaxy S20 FE</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung2.html">Samsung Galaxy M12</a></li>                            
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung3.html">Samsung Galaxy M52</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung4.html">Samsung Galaxy A03s</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung5.html">Samsung Galaxy A22</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo1.html">Vivo V21 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo2.html">Vivo Y21</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo3.html">Vivo Y33s</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo4.html">Vivo V21e 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo5.html">Vivo Y73</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+7T.html">OnePlus 7T</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+8T.html">OnePlus 8T 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+9.html">OnePlus 9 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_2.html">OnePlus Nord 2</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_CE.html">OnePlus Nord CE</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi8.html">Xiomi Redmi 8</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi9p.html">Xiomi Redmi 9 Power</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi10s.html">Xiomi Redmi Note 10S</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9.html">Xiomi Redmi Note 9</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9p.html">Xiomi Redmi Note 9 Pro</a></li>
+                         
+                         </ul>
+                    </div>
+                </div></li>
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\login.html">
+				<div style="display: inline-flex;" id="view">Login<img src="login.jpg" style="height: 18px; width: 30px; padding-left: 5px;">
+				</div></a></div></li>
+				</ul>
+        </div>
+		
+		
+		<!--rest-->
+		
+		
+		
+		
+       <center> <h1 class="nameit">'Your Satisfaction' is our Motto!</h1></center>
+	   <br>
+       <center> <img src="logo.png" alt="logo" style="width:30%"/></center>
+       <p> Our talented team helps you choose<br>the best smartphone for you.</p>
+	   
+	   <center><h1 class="nameit"><br><u>Our Team</u></h1></center>
+       <div class= "container">
+			<div class= "box">
+			<span></span>
+			<div class= "content">
+				<h2> Hawaiza Siddiqui </h2>
+				<p>Diploma, Computer Engineering.<br>Student at M.H. Saboo Siddik Polytechnic.</p>
+	
+			</div>
+			</div>
+		<div class= "box">
+		<span></span>
+		<div class= "content">
+			<h2> Shazmeen Shaikh </h2>
+			<p> Diploma, Computer Engineering.<br>Student at M.H. Saboo Siddik Polytechnic.</p>
+			
+		</div>
+		</div>
+		<div class= "box">
+			<span></span>
+			<div class= "content">
+			<h2> Huzefa Shaikh </h2>
+			<p> Diploma, Computer Engineering.<br>Student at M.H. Saboo Siddik Polytechnic.</p>
+			</div>
+		</div>
+		
+		<div class= "box">
+		<span></span>
+			<div class= "content">
+			<h2> Shams Shaikh </h2>
+			<p> Diploma, Computer Engineering.<br>Student at M.H. Saboo Siddik Polytechnic.</p>
+			</div>
+		</div>
+		<div class= "box">
+		<span></span>
+		<div class= "content">
+			<h2> Fardeen Khan </h2>
+			<p> Diploma, Computer Engineering.<br>Student at M.H. Saboo Siddik Polytechnic.</p>
+			
+		</div>
+		</div>
+		<div class= "box">
+		<span></span>
+			<div class= "content">
+			<h2> Taizeen Sayyed </h2>
+			<p> Diploma, Computer Engineering.<br>Student at M.H. Saboo Siddik Polytechnic.</p>
+			</div>
+		</div>
+		</div>
+		
+       <p>Look for the best phones in the market by comparing their specifications and prices. <br>
+	   <br><i>Find which one's for you!</i></p><br>
+        <center><h1 class="nameit"><br><u>Our Features</u></h1></center>
+		
+    
+     
+    <p id="about"><br>Compare detailed specifications of mobile phones side by side on <b><i>CellBuzz</i></b>.<br>
+	<br>The compare feature on our website helps you in selecting the best smartphone that suits your requirements in the shortest 
+	amount of time.<br>
+	<br>Compare Mobiles from top brands and buy at the best prices in India. <br>
+<br>Find out the best feature smartphone for yourself after comparing mobile phones on different criteria.<br>
+<br>Here, you are facilitated to compare 2 mobiles of your choice on the basis of price, brand, 
+features and specifications. <br>
+<br>Also, for detailed information, you can see the comparison on the basis 
+of technical aspects such as OS, RAM, screen size, battery life, processor, 
+camera, storage capacity, and more.<br>
+<br>We provide an easy navigational experience  to turn your shopping 
+tour into an enlightened experience!<br></p>
+<center><h3><br> So go ahead, do the comparison, and buy the best smartphone.</h3> </center> 
+      <center><h2><br> Do Visit Again!</h2> </center>
+	  <br>
+        </body>
+    </html>

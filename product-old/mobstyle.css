@@ -1,0 +1,46 @@
+.mob-name
+{
+    text-align: center;
+    text-decoration:none;
+    margin-left:10px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.zoom:hover
+{
+    
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    
+}
+
+.naming
+{
+    color: darkblue;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.zoom
+{
+    transition-duration: 0.5s;
+}
+
+.mob-name:hover
+{
+
+    text-align: center;
+    text-decoration: black;
+    color: darkblue;
+    text-decoration: underline black;
+    font-weight: bold;
+
+}
+
+#spacekampadhgai{
+     padding:0px 50px 0px 50px;
+  }

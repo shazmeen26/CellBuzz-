@@ -1,0 +1,431 @@
+<html>
+	<head><title>Products</title>
+	<link rel="stylesheet" href="mobstyle.css"/>
+	</head>
+	
+	<body>
+<!--Main Menu-->
+<link rel="stylesheet" href="newme.css"/>
+
+<div>
+<div class="header" >
+		<img src="logo.png" height="150px">
+	</div>
+</div>
+<div class="header2" >
+<h1 id="colourit" onmouseover="mouseover()" onmouseout="mouseout()">Find the best mobile for you!</h1>
+</div>
+		
+        <div class="menu">
+            <ul class="list">
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\microproject.html">Home</a></div></li>
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\aboutus.html">About Us</a></div></li>
+                <li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\products\mobdiv.html" target="_blank">Products</a>
+                </div></li>
+				<li><div><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\comparision.html">Compare</a></div></li>
+                <li><div class="dropdown"><a class="dropbtn"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for phones" title="Type the name" style="height: 18px;display: inline-flex;" ><img src="ser.png" style="height: 18px; width: 30px;"></a>
+                    <div class="dropdown-content">
+                        <ul id="myUL" class="sera">
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html">Samsung Galaxy S20 FE</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung2.html">Samsung Galaxy M12</a></li>                            
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung3.html">Samsung Galaxy M52</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung4.html">Samsung Galaxy A03s</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung5.html">Samsung Galaxy A22</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo1.html">Vivo V21 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo2.html">Vivo Y21</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo3.html">Vivo Y33s</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo4.html">Vivo V21e 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo5.html">Vivo Y73</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+7T.html">OnePlus 7T</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+8T.html">OnePlus 8T 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+9.html">OnePlus 9 5G</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_2.html">OnePlus Nord 2</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_CE.html">OnePlus Nord CE</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi8.html">Xiomi Redmi 8</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi9p.html">Xiomi Redmi 9 Power</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi10s.html">Xiomi Redmi Note 10S</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9.html">Xiomi Redmi Note 9</a></li>
+						<li><a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9p.html">Xiomi Redmi Note 9 Pro</a></li>
+                         
+                          </ul>
+                    </div>
+                </div></li>
+                <li><div>
+				<a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\login.html">
+				<div style="display: inline-flex;" id="view">Login<img src="login.jpg" style="height: 18px; width: 30px; padding-left: 5px;">
+				</div></a></div></li>
+            </ul>
+        </div>
+	
+
+
+
+
+<!--Sub Menu-->	
+<div id="category">
+            <ul class="menu1">
+                <li><div class="dropdown">
+                    <a class="dropbtn">Featured</a>
+                    <div class="dropdown-content" >
+                      <a href="">All Product</a>
+                      <a href="#trend_pro">Trending</a>
+                      <a href="#Best">Best_Sellers</a>
+                    </div>
+                    </div>
+                </li>
+                
+                
+                <li><div class="dropdown">
+                    <a class="dropbtn">Brand</a>
+                    <div class="dropdown-content">
+                    <div id="mymobilecontainer">
+                <a class="btnm active"  style="text-align: center;"><button onclick="filterSelection('all')" style="padding: 6px 35px;">Show All</button></a>
+                <a class="btnm"  style="text-align: center;"><button onclick="filterSelection('xiomi')" style="padding: 6px 26px";>Xiomi</button></a>
+                <a class="btnm"  style="text-align: center;"><button onclick="filterSelection('samsung')" style="padding: 6px 15px">Samsung</button></a>
+                <a class="btnm"  style="text-align: center;"><button onclick="filterSelection('vivo')" style="padding: 6px 30px">Vivo</button></a>
+                <a class="btnm"  style="text-align: center;"><button onclick="filterSelection('oneplus')" style="padding: 6px 17px">OnePlus</button></a>
+                </div>
+                </div>
+                </div>
+                </li>
+            </ul>
+</div>     
+
+
+
+
+<div class="featured product">
+   <div style="padding-right:20px; float:none;" class="filterDiv">
+     <div class="naming">
+	 <p id="Best"><h2>BestSellers</h2></p>
+	 </div>
+   </div>
+    <div style="padding-left: 70px;">
+    
+     <div class="filterDiv">
+        <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi9p.html"><img src="redmi2.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi9p.html" class="mob-name">Redmi 9 Power</a>
+        </center>
+     </div> 
+    
+     <div class="filterDiv">
+       <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9p.html"><img src="redmi4.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9p.html" class="mob-name">Redmi Note 9 Pro</a>
+       </center>
+     </div> 
+    
+     <div class="filterDiv">
+       <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html"><img src="samsung.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html" class="mob-name">Samsung S20 FE</a>
+       </center>
+      </div> 
+    
+      <div class="filterDiv">
+        <center>
+          <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+9.html"><img src="one3.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii"</a>
+          <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+9.html" class="mob-name">OnePlus 9 5G</a>
+        </center>
+      </div> 
+    
+    </div>
+	
+</div>
+
+
+<div class="featured product">
+  <div id="Trending_Product"></div>
+  <div style="padding-right:20px; float:none;" class="filterDiv">
+    <div class="naming">
+	<p id="trend_pro"><h2>TrendingProducts</h2></p>
+	</div>
+   </div>
+    <div style="padding-left: 70px;">
+    
+     <div class="filterDiv">
+        <center >
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html"><img src="samsung.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii" </a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html" class="mob-name">Samsung S20 FE</a>
+        </center>
+     </div> 
+    
+     <div class="filterDiv">
+       <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi10s.html"><img src="redmi5.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi10s.html" class="mob-name">Redmi Note 10s</a>
+       </center>
+     </div> 
+    
+      <div class="filterDiv">
+        <center>
+          <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo4.html"><img src="vivo4.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii"</a>
+          <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo4.html" class="mob-name">Vivo V21e 5G</a>
+        </center>
+      </div> 
+    
+      <div class="filterDiv">
+        <center>
+          <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_2.html"><img src="one4.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgaii"</a>
+          <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_2.html" class="mob-name" >OnePlus Nord 2</a>
+        </center>
+      </div> 
+    </div>
+</div>
+
+  
+
+
+
+
+
+<div class="brands">
+<div class="filterDiv samsung_phones" style="padding-right:1000px;">
+<div class="naming"><h2>SAMSUNG </h2></div>
+</div>
+<div style="padding-left: 5px;">
+
+ <div class="filterDiv samsung_phones" >
+    <center>
+     <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html"><img src="samsung.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+     <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung1.html" class="mob-name">Samsung S20 FE 5G</a>
+    </center>
+ </div> 
+
+ <div class="filterDiv samsung_phones" >
+   <center>
+     <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung3.html"><img src="samsung2.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+     <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung3.html" class="mob-name">Samsung M52</a>
+   </center>
+ </div> 
+
+ <div class="filterDiv samsung_phones" >
+   <center>
+     <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung2.html"><img src="samsung3.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+     <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung2.html" class="mob-name">Samsung M12</a>
+   </center>
+  </div> 
+
+  <div class="filterDiv samsung_phones" >
+    <center>
+      <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung5.html"><img src="samsung4.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+      <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung5.html" class="mob-name">Samsung A22</a>
+    </center>
+  </div> 
+
+  <div class="filterDiv samsung_phones" >
+    <center>
+      <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung4.html"><img src="samsung5.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+      <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\samsung4.html" class="mob-name" >Samsung A03s</a>
+    </center>
+  </div> 
+</div>
+
+
+<div class="filterDiv xiomi_phones" style="padding-right:1000px;">
+  <div class="naming"><h2>XIAOMI </h2></div>
+  </div>
+  <div style="padding-left: 5px;">
+  
+   <div class="filterDiv xiomi_phones" >
+     <center>
+       <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi8.html"><img src="redmi1.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+       <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi8.html" class="mob-name">Redmi 8</a>
+     </center>
+   </div> 
+  
+   <div class="filterDiv xiomi_phones" >
+     <center>
+       <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi9p.html"><img src="redmi2.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+       <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi9p.html" class="mob-name">Redmi 9 Power</a>
+     </center>
+   </div> 
+  
+   <div class="filterDiv xiomi_phones" >
+      <center>
+       <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9.html"><img src="redmi3.jpg"  height="40%" width="105%" class="zoom" id="spacekampadhgai"</a>
+       <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9.html" class="mob-name">Redmi Note 9</a>
+      </center>
+    </div> 
+  
+    <div class="filterDiv xiomi_phones" >
+       <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9p.html"><img src="redmi4.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmin9p.html" class="mob-name">Redmi Note 9 Pro</a>
+      </center>
+    </div> 
+  
+    <div class="filterDiv xiomi_phones" >
+       <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi10s.html"><img src="redmi5.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\redmi10s.html" class="mob-name" >Redmi Note 10s</a>
+       </center>
+    </div> 
+
+  </div>
+
+
+  <div class="filterDiv vivo_phones" style="padding-right:1000px;">
+    <div class="naming"><h2>VIVO </h2></div>
+    </div>
+    <div style="padding-left: 5px;">
+    
+     <div class="filterDiv vivo_phones" >
+       <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo1.html"><img src="vivo1.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo1.html" class="mob-name">Vivo V21 5G</a>
+       </center>
+     </div> 
+    
+     <div class="filterDiv vivo_phones" >
+       <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo2.html"><img src="vivo2.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo2.html" class="mob-name">Vivo Y21</a>
+       </center>
+     </div> 
+    
+     <div class="filterDiv vivo_phones" >
+        <center>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo3.html"><img src="vivo3.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+         <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo3.html" class="mob-name">Vivo Y33s</a>
+        </center>
+      </div> 
+    
+      <div class="filterDiv vivo_phones" >
+         <center>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo4.html"><img src="vivo4.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo4.html" class="mob-name">Vivo V21e 5G</a>
+        </center>
+      </div> 
+    
+      <div class="filterDiv vivo_phones" >
+         <center>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo5.html"><img src="vivo5.jpg"  height="40%" width="120%" class="zoom" id="spacekampadhgai"</a>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\vivo5.html" class="mob-name" >Vivo Y73</a>
+         </center>
+      </div> 
+  
+    </div>
+  
+
+    <div class="filterDiv oneplus_phones" style="padding-right:1000px;">
+      <div class="naming"><h2>ONEPLUS </h2></div>
+      </div>
+      <div style="padding-left: 5px;">
+      
+       <div class="filterDiv oneplus_phones" >
+         <center>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+7T.html"><img src="one1.jpg"  height="40%" width="130%" class="zoom" id="spacekampadhgai"</a>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+7T.html" class="mob-name">OnePlus 7T</a>
+         </center>
+       </div> 
+      
+       <div class="filterDiv oneplus_phones" >
+         <center>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+8T.html"><img src="one2.jpg"  height="40%" width="130%" class="zoom" id="spacekampadhgai"</a>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+8T.html" class="mob-name">OnePlus 8T 5G</a>
+         </center>
+       </div> 
+      
+       <div class="filterDiv oneplus_phones" >
+          <center>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+9.html"><img src="one3.jpg"  height="40%" width="130%" class="zoom" id="spacekampadhgai"</a>
+           <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+9.html" class="mob-name">OnePlus 9 5G</a>
+          </center>
+        </div> 
+      
+        <div class="filterDiv oneplus_phones" >
+           <center>
+             <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_2.html"><img src="one4.jpg"  height="40%" width="130%" class="zoom" id="spacekampadhgai"</a>
+             <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_2.html" class="mob-name">OnePlus Nord 2</a>
+          </center>
+        </div> 
+      
+        <div class="filterDiv oneplus_phones" >
+           <center>
+             <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_CE.html"><img src="one5.jpg"  height="40%" width="130%" class="zoom" id="spacekampadhgai"</a>
+             <a href="C:\Users\91913\Desktop\clg\5th SEM\CSS\CODES\microproject\viewproduct\1+Nord_CE.html" class="mob-name" >OnePlus Nord CE</a>
+           </center>
+        </div> 
+    
+      </div>
+
+</div>
+
+
+
+
+   <script>
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    HideClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+
+function HideClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+var btnContainer = document.getElementById("mymobilecontainer");
+var btns = btnContainer.getElementsByClassName("btnm");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  
+  
+  <!--Menu-->
+  function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+  
+  
+    </script> 
+
+	</body>
+</html>
